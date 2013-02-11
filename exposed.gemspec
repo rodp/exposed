@@ -7,11 +7,11 @@ require "exposed/version"
 Gem::Specification.new do |s|
   s.name        = "exposed"
   s.version     = Exposed::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Exposed."
-  s.description = "TODO: Description of Exposed."
+  s.authors     = ["Rodoljub Petrovic"]
+  s.email       = ["me@rodpetrovic.com"]
+  s.homepage    = "https://github.com/rodp/exposed"
+  s.summary     = "A Rails engine that exposes ActiveRecord models as JSON API with minimum hassle"
+  s.description = s.summary
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+post_1:
+  id: 1
+  title: First post
+  content: Content of the first post
+
+post_2:
+  id: 2
+  title: Second post
+  content: Content of the second post

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+comment_1:
+  post: post_1
+  content: You are right.
+
+comment_2:
+  post: post_1
+  content: You are wrong.
+
+comment_3:
+  post: post_2
+  content: You are both right and wrong.

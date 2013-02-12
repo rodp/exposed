@@ -40,10 +40,10 @@ To expose them as JSON API, you need to do two things:
 
 The collections will be available at:
 
-**`GET /posts`**
-**`GET /comments`**
+`GET /posts`
+`GET /comments`
 
-They will return JSON, of course. For example, **`/posts`** will return:
+They will return JSON, of course. For example, `/posts` will return:
 
     [
         {
@@ -59,9 +59,9 @@ They will return JSON, of course. For example, **`/posts`** will return:
         }
     ]
 
-By default, each model's JSON representation will include all attributes. If you want to include associations, you can use **`include`** URL parameter:
+By default, each model's JSON representation will include all attributes. If you want to include associations, you can use `include` URL parameter:
 
-**`GET /posts?include=comments`**
+`GET /posts?include=comments`
 
 This will return:
 
@@ -84,9 +84,9 @@ This will return:
         }
     ]
 
-If you want to exclude some attributes, you can use the **`exclude`** URL parameter:
+If you want to exclude some attributes, you can use the `exclude` URL parameter:
 
-**`GET /posts?exclude=id,content`**
+`GET /posts?exclude=id,content`
 
 This will return:
 
@@ -97,7 +97,7 @@ This will return:
 
 Individual models are available at:
 
-**`GET /posts/1`**
+`GET /posts/1`
 
 This will return:
 
@@ -107,13 +107,13 @@ This will return:
         "content"  : "First post content"
     }
 
-And you can use **`include`** and **`exclude`** URL parameters just like with collections.
+And you can use `include` and `exclude` URL parameters just like with collections.
 
 ### POST ###
 
 New models can be created by posting JSON to:
 
-**`POST /posts { "title": "Third post", "content": "Third post content" }`**
+`POST /posts { "title": "Third post", "content": "Third post content" }`
 
 The JSON representation of the newly created model is returned.
 
@@ -121,7 +121,7 @@ The JSON representation of the newly created model is returned.
 
 Models can be modified by putting JSON to:
 
-**`PUT /posts/1 { "title": "Modified post", "content": "Modified post content" }`**
+`PUT /posts/1 { "title": "Modified post", "content": "Modified post content" }`
 
 The new JSON representation of the modified model is returned. The ommited attributes remain unchanged, so PUT actually behaves like PATCH (sorry, REST).
 
@@ -129,7 +129,7 @@ The new JSON representation of the modified model is returned. The ommited attri
 
 Models can be deleted by sending a DELETE request to:
 
-**`DELETE /posts/1`**
+`DELETE /posts/1`
 
 The JSON representation of the deleted model is returned.
 
